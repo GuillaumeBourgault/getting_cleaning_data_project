@@ -1,0 +1,27 @@
+Code book for the dataset "clean.txt"
+course: Getting and Cleaning Data
+session: 015, June 1st 2015
+Course project submission
+Student: Guillaume Bourgault
+Each observation is identified by two variables:
+	-"subjectId": a number between 1 and 30
+	-"activity": an activity name taken from the following possibilities:
+		-LAYING
+		-SITTING
+		-STANDING
+		-WALKING
+		-WALKING_DOWNSTAIRS
+		-WALKING_UPSTAIRS
+The other variables names give away their origin.  
+Elements of the variable names are separated by "-".  
+The first element is either "mean" or "standard_dev".  
+The second element is the variable measured:
+	-BodyAcc
+	-GravityAcc
+	-BodyAccJerk
+	-etc.
+The third element tells if the the signals are reported before or after the application of a Fast Fourier Transform (FFT)
+	-time_domain (before FFT)
+	-Fourier_domain (after FFT)
+The variable name might contain a fourth element, indicating the direction X, Y or Z measured by the signal.  
+The data shown in the dataset is the average of every signal measured during each activity for each subject.  
